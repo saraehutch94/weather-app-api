@@ -1,6 +1,6 @@
 // Constants -> Data that does not change
 
-const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
+const BASE_URL = "https://api.openweathermap.org/data/2.5/forecast";
 const API_KEY = "636c081e5a0b64f047edce5f8e863700";
 
 // Variables -> Data that changes
