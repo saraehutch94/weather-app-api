@@ -22,8 +22,6 @@ $form.on("submit", handleSubmit);
 function handleSubmit(evt) {
     evt.preventDefault();
     const cityName = $input.val();
-    console.log(cityName);
-
     $.ajax(`${BASE_URL}?q=${cityName}&appid=${API_KEY}&units=imperial`)
     .then(function(data) {
         // success callback function
@@ -37,8 +35,14 @@ function handleSubmit(evt) {
 };
 
 function render() {
-    $city.text(data.name);
-    $temp.text(data.main.temp);
-    $feelsLike.text(data.main.feels_like);
-    $weather.text(data.weather[0].description);
+    $main.html(`
+        <h3>Weather for:</h3>
+        <p id="city">${cityData.name}</p>
+        <p>Temperature:</p>
+        <p id="temp">${cityData.main.temp}</p>
+        <p>Feels like:</p>
+        <p id="feels-like">${cityData.main.feels_like}</p>
+        <p>Weather:</p>
+        <p id="weather">${cityData.weather[0].description}</p>
+    `);
 };
