@@ -9,12 +9,9 @@ let cityData;
 
 // Cached Element References (DOM Elements)
 
-const $city = $("#city");
-const $temp = $("#temp");
-const $feelsLike = $("#feels-like");
-const $weather = $("#weather");
 const $form = $("form");
 const $input = $("input[type='text']");
+const $main = $("main");
 
 // Event Listeners
 
