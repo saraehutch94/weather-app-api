@@ -5,6 +5,7 @@ const API_KEY = "636c081e5a0b64f047edce5f8e863700";
 
 // Variables -> Data that changes
 
+let cityData;
 
 // Cached Element References (DOM Elements)
 
@@ -33,6 +34,7 @@ function handleSubmit(evt) {
         $temp.text(data.main.temp);
         $feelsLike.text(data.main.feels_like);
         $weather.text(data.weather[0].description);
+        cityData = data;
     }, function(error) {
         // failure callback function
         console.log("promise failed");
