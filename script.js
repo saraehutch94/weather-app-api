@@ -27,7 +27,7 @@ function handleSubmit(evt) {
     const cityName = $input.val();
     console.log(cityName);
 
-    $.ajax("https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=636c081e5a0b64f047edce5f8e863700&units=imperial")
+    $.ajax(`${BASE_URL}?q=${cityName}&appid=${API_KEY}&units=imperial`)
     .then(function(data) {
         // success callback function
         // console.log("promise fulfilled!");
