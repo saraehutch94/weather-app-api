@@ -10,11 +10,17 @@ const $city = $("#city");
 const $temp = $("#temp");
 const $feelsLike = $("#feels-like");
 const $weather = $("#weather");
+const $form = $("form");
 
 // Event Listeners
 
+$form.on("submit", handleSubmit);
 
 // Functions
+
+function handleSubmit() {
+    console.log("form submitted!");
+};
 
 // const promise = $.ajax("https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=636c081e5a0b64f047edce5f8e863700");
 
