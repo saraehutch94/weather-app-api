@@ -12,6 +12,7 @@ let cityData;
 const $form = $("form");
 const $input = $("input[type='text']");
 const $main = $("main");
+const $select = $("select");
 
 // Event Listeners
 
