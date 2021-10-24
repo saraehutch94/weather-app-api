@@ -34,14 +34,24 @@ function handleSubmit(evt) {
 };
 
 function render() {
-    $main.html(`
+    if ($select.val() === "1") {
+        $main.html(`
         <h3>Weather for:</h3>
-        <p id="city">${cityData.name}</p>
+        <p id="city">${cityData.city.name}</p>
         <p>Temperature:</p>
-        <p id="temp">${cityData.main.temp}</p>
+        <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
         <p>Feels like:</p>
-        <p id="feels-like">${cityData.main.feels_like}</p>
+        <p id="feels-like">${cityData.list[4].main.feels_like}&#8457;</p>
         <p>Weather:</p>
-        <p id="weather">${cityData.weather[0].description}</p>
-    `);
+        <p id="weather">${cityData.list[4].weather[0].description}</p>
+        `);
+    } else if ($select.val() === "2") {
+        console.log("show first and second day");
+    } else if ($select.val() === "3") {
+        console.log("show first, second and third day");
+    } else if ($select.val() === "4") {
+        console.log("show first, second, third and fourth day");
+    } else {
+        console.log("show all five days");
+    }
 };
