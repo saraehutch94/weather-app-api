@@ -23,13 +23,13 @@ function handleSubmit(evt) {
     evt.preventDefault();
     const cityName = $input.val();
     $.ajax(`${BASE_URL}?q=${cityName}&appid=${API_KEY}&units=imperial`)
-    .then(function(data) {
-        cityData = data;
-        render();
-    }, function(error) {
-        console.log("promise failed");
-        console.log(error);
-    });
+        .then(function (data) {
+            cityData = data;
+            render();
+        }, function (error) {
+            console.log("promise failed");
+            console.log(error);
+        });
 };
 
 function render() {
