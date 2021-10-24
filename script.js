@@ -24,11 +24,9 @@ function handleSubmit(evt) {
     const cityName = $input.val();
     $.ajax(`${BASE_URL}?q=${cityName}&appid=${API_KEY}&units=imperial`)
     .then(function(data) {
-        // success callback function
         cityData = data;
         render();
     }, function(error) {
-        // failure callback function
         console.log("promise failed");
         console.log(error);
     });
