@@ -46,12 +46,78 @@ function render() {
         <p id="weather">${cityData.list[4].weather[0].description}</p>
         `);
     } else if ($select.val() === "2") {
-        console.log("show first and second day");
+        $main.html(`
+        <h3>Weather for:</h3>
+        <p id="city">${cityData.city.name}</p>
+        <p>Temperature:</p>
+        <p id="temp">Today: ${cityData.list[4].main.temp}&#8457;</p>
+        <p id="temp-2nd-day">Tomorrow: ${cityData.list[12].main.temp}&#8457;</p>
+        <p>Feels like:</p>
+        <p id="feels-like">Today: ${cityData.list[4].main.feels_like}&#8457;</p>
+        <p id="feels-like-2nd-day">Tomorrow: ${cityData.list[12].main.feels_like}&#8457;</p>
+        <p>Weather:</p>
+        <p id="weather">Today: ${cityData.list[4].weather[0].description}</p>
+        <p id="weather-2nd-day">Tomorrow: ${cityData.list[12].weather[0].description}</p>
+        `);
     } else if ($select.val() === "3") {
-        console.log("show first, second and third day");
+        $main.html(`
+        <h3>Weather for:</h3>
+        <p id="city">${cityData.city.name}</p>
+        <p>Temperature:</p>
+        <p id="temp">Today: ${cityData.list[4].main.temp}&#8457;</p>
+        <p id="temp-2nd-day">Tomorrow: ${cityData.list[12].main.temp}&#8457;</p>
+        <p id-"temp-3rd-day">Third day: ${cityData.list[20].main.temp}&#8457;</p>
+        <p>Feels like:</p>
+        <p id="feels-like">Today: ${cityData.list[4].main.feels_like}&#8457;</p>
+        <p id="feels-like-2nd-day">Tomorrow: ${cityData.list[12].main.feels_like}&#8457;</p>
+        <p id="feels-like-3rd-day">Third day: ${cityData.list[20].main.feels_like}&#8457;</p>
+        <p>Weather:</p>
+        <p id="weather">Today: ${cityData.list[4].weather[0].description}</p>
+        <p id="weather-2nd-day">Tomorrow: ${cityData.list[12].weather[0].description}</p>
+        <p id="weather-3rd-day">Third day: ${cityData.list[20].weather[0].description}</p>
+        `);
     } else if ($select.val() === "4") {
-        console.log("show first, second, third and fourth day");
+        $main.html(`
+        <h3>Weather for:</h3>
+        <p id="city">${cityData.city.name}</p>
+        <p>Temperature:</p>
+        <p id="temp">Today: ${cityData.list[4].main.temp}&#8457;</p>
+        <p id="temp-2nd-day">Tomorrow: ${cityData.list[12].main.temp}&#8457;</p>
+        <p id="temp-3rd-day">Third day: ${cityData.list[20].main.temp}&#8457;</p>
+        <p id="temp-4th-day">Fourth day: ${cityData.list[28].main.temp}&#8457;</p>
+        <p>Feels like:</p>
+        <p id="feels-like">Today: ${cityData.list[4].main.feels_like}&#8457;</p>
+        <p id="feels-like-2nd-day">Tomorrow: ${cityData.list[12].main.feels_like}&#8457;</p>
+        <p id="feels-like-3rd-day">Third day: ${cityData.list[20].main.feels_like}&#8457;</p>
+        <p id="feels-like-4th-day">Fourth day: ${cityData.list[28].main.feels_like}&#8457;</p>
+        <p>Weather:</p>
+        <p id="weather">Today: ${cityData.list[4].weather[0].description}</p>
+        <p id="weather-2nd-day">Tomorrow: ${cityData.list[12].weather[0].description}</p>
+        <p id="weather-3rd-day">Third day: ${cityData.list[20].weather[0].description}</p>
+        <p id="weather-4th-day">Fourth day: ${cityData.list[28].weather[0].description}</p>
+        `);
     } else {
-        console.log("show all five days");
+        $main.html(`
+        <h3>Weather for:</h3>
+        <p id="city">${cityData.city.name}</p>
+        <p>Temperature:</p>
+        <p id="temp">Today: ${cityData.list[4].main.temp}&#8457;</p>
+        <p id="temp-2nd-day">Tomorrow: ${cityData.list[12].main.temp}&#8457;</p>
+        <p id="temp-3rd-day">Third day: ${cityData.list[20].main.temp}&#8457;</p>
+        <p id="temp-4th-day">Fourth day: ${cityData.list[28].main.temp}&#8457;</p>
+        <p id="temp-5th-day">Fifth day: ${cityData.list[36].main.temp}&#8457;</p>
+        <p>Feels like:</p>
+        <p id="feels-like">Today: ${cityData.list[4].main.feels_like}&#8457;</p>
+        <p id="feels-like-2nd-day">Tomorrow: ${cityData.list[12].main.feels_like}&#8457;</p>
+        <p id="feels-like-3rd-day">Third day: ${cityData.list[20].main.feels_like}&#8457;</p>
+        <p id="feels-like-4th-day">Fourth day: ${cityData.list[28].main.feels_like}&#8457;</p>
+        <p id="feels-like-5th-day">Fifth day: ${cityData.list[36].main.feels_like}&#8457;</p>
+        <p>Weather:</p>
+        <p id="weather">Today: ${cityData.list[4].weather[0].description}</p>
+        <p id="weather-2nd-day">Tomorrow: ${cityData.list[12].weather[0].description}</p>
+        <p id="weather-3rd-day">Third day: ${cityData.list[20].weather[0].description}</p>
+        <p id="weather-4th-day">Fourth day: ${cityData.list[28].weather[0].description}</p>
+        <p id="weather-5th-day">Fifth day: ${cityData.list[36].weather[0].description}</p>
+        `);
     }
 };
