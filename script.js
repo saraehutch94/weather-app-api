@@ -6,6 +6,10 @@
 
 // Cached Element References (DOM Elements)
 
+const $city = $("#city");
+const $temp = $("#temp");
+const $feelsLike = $("#feels-like");
+const $weather = $("#weather");
 
 // Event Listeners
 
