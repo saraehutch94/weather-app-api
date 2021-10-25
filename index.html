@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +10,35 @@
     <link rel="stylesheet" href="./style.css">
     <title>AJAX Weather App</title>
 </head>
+
 <body>
     <header>
         <h1>Check the forecast!</h1>
     </header>
+    <form style="margin-top: 50px;">
+        <label>
+            <input type="text" placeholder="ex: Boston">
+        </label>
+        <input type="submit" class ="input-area" value="Get Weather Info">
+    </form>
+    <div class="select-days">
+        <label for="forecast-days">For</label>
+        <select name="forecast-days" id="forecast-days">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> days
+    </div>
     <h2 class="weather-for"></h2>
     <main>
+        <section class="today-weather"></section>
+        <section class="tomorrow-weather"></section>
+        <section class="day-three-weather"></section>
+        <section class="day-four-weather"></section>
+        <section class="day-five-weather"></section>
     </main>
-    <form style="margin-top: 50px;">
-        <label>Enter city name here:
-            <input type="text" placeholder="Chicago, etc...">
-        </label>
-        <input type="submit" value="Get Weather Info">
-    </form>
-    <label for="forecast-days">View:</label>
-    <select name="forecast-days" id="forecast-days">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select> days
 </body>
+
 </html>

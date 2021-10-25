@@ -17,6 +17,12 @@ let cityData;
 const $form = $("form");
 const $input = $("input[type='text']");
 const $main = $("main");
+const $allSections = $("section");
+const $section1 = $(".today-weather");
+const $section2 = $(".tomorrow-weather");
+const $section3 = $(".day-three-weather");
+const $section4 = $(".day-four-weather");
+const $section5 = $(".day-five-weather");
 const $h2 = $(".weather-for");
 const $select = $("select");
 
@@ -42,20 +48,25 @@ function handleSubmit(evt) {
 function render() {
     if ($select.val() === "1") {
         $h2.html(`${cityData.city.name} Weather`);
-        $main.html(`
-        <section class="today-weather">
+        $main.css({
+            "display": "flex",
+            "justify-content": "center"
+        });
+        $section1.html(`
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
             <h4>Feels Like</h4>
             <p id="feels-like">${cityData.list[4].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[4].weather[0].description).charAt(0).toUpperCase() + (cityData.list[4].weather[0].description).slice(1)}</p>
-        </section>
         `);
     } else if ($select.val() === "2") {
         $h2.html(`${cityData.city.name} Weather`);
-        $main.html(`
-        <section class="today-weather">
+        $main.css({
+            "display": "flex",
+            "justify-content": "center",
+        });
+        $section1.html(`
             <h3>Today</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
@@ -63,8 +74,8 @@ function render() {
             <p id="feels-like">${cityData.list[4].main.feels_like}&#8457;</p>
             <h4>Weather</h4>
             <p id="weather">${(cityData.list[4].weather[0].description).charAt(0).toUpperCase() + (cityData.list[4].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="tomorrow-weather">
+        `);
+        $section2.html(`
             <h3>Tomorrow</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[12].main.temp}&#8457;</p>
@@ -72,12 +83,14 @@ function render() {
             <p id="feels-like">${cityData.list[12].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[12].weather[0].description).charAt(0).toUpperCase() + (cityData.list[12].weather[0].description).slice(1)}</p>
-        </section>
         `);
     } else if ($select.val() === "3") {
         $h2.html(`${cityData.city.name} Weather`);
-        $main.html(`
-        <section class="today-weather">
+        $main.css({
+            "display": "flex",
+            "justify-content": "center"
+        });
+        $section1.html(`
             <h3>Today</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
@@ -85,8 +98,8 @@ function render() {
             <p id="feels-like">${cityData.list[4].main.feels_like}&#8457;</p>
             <h4>Weather</h4>
             <p id="weather">${(cityData.list[4].weather[0].description).charAt(0).toUpperCase() + (cityData.list[4].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="tomorrow-weather">
+        `);
+        $section2.html(`
             <h3>Tomorrow</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[12].main.temp}&#8457;</p>
@@ -94,8 +107,8 @@ function render() {
             <p id="feels-like">${cityData.list[12].main.feels_like}&#8457;</p>
             <h4>Weather</h4>
             <p id="weather">${(cityData.list[12].weather[0].description).charAt(0).toUpperCase() + (cityData.list[12].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="day-three-weather">
+        `);
+        $section3.html(`
             <h3>${day3}</h3>
             <h4>Temperature</h4>
             <p id-"temp">${cityData.list[20].main.temp}&#8457;</p>
@@ -103,12 +116,14 @@ function render() {
             <p id="feels-like">${cityData.list[20].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[20].weather[0].description).charAt(0).toUpperCase() + (cityData.list[20].weather[0].description).slice(1)}</p>
-        </section> 
         `);
     } else if ($select.val() === "4") {
         $h2.html(`${cityData.city.name} Weather`);
-        $main.html(`
-        <section class="today-weather">
+        $main.css({
+            "display": "flex",
+            "justify-content": "center"
+        });
+        $section1.html(`
             <h3>Today</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
@@ -116,8 +131,8 @@ function render() {
             <p id="feels-like">${cityData.list[4].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[4].weather[0].description).charAt(0).toUpperCase() + (cityData.list[4].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="tomorrow-weather">
+        `);
+        $section2.html(`
             <h3>Tomorrow</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[12].main.temp}&#8457;</p>
@@ -125,8 +140,8 @@ function render() {
             <p id="feels-like">${cityData.list[12].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[12].weather[0].description).charAt(0).toUpperCase() + (cityData.list[12].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="day-three-weather">
+        `);
+        $section3.html(`
             <h3>${day3}</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[20].main.temp}&#8457;</p>
@@ -134,8 +149,8 @@ function render() {
             <p id="feels-like">${cityData.list[20].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[20].weather[0].description).charAt(0).toUpperCase() + (cityData.list[20].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="day-four-weather">
+        `);
+        $section4.html(`
             <h3>${day4}</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[28].main.temp}&#8457;</p>
@@ -143,12 +158,14 @@ function render() {
             <p id="feels-like">${cityData.list[28].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[28].weather[0].description).charAt(0).toUpperCase() + (cityData.list[28].weather[0].description).slice(1)}</p>
-        </section>   
         `);
     } else {
         $h2.html(`${cityData.city.name} Weather`);
-        $main.html(`
-        <section class="today-weather">
+        $main.css({
+            "display": "flex",
+            "justify-content": "center",
+        });
+        $section1.html(`
             <h3>Today</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
@@ -156,8 +173,8 @@ function render() {
             <p id="feels-like">${cityData.list[4].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[4].weather[0].description).charAt(0).toUpperCase() + (cityData.list[4].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="tomorrow-weather">
+        `);
+        $section2.html(`
             <h3>Tomorrow</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[12].main.temp}&#8457;</p>
@@ -165,8 +182,8 @@ function render() {
             <p id="feels-like">${cityData.list[12].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[12].weather[0].description).charAt(0).toUpperCase() + (cityData.list[12].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="day-three-weather>
+        `);
+        $section3.html(`
             <h3>${day3}</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[20].main.temp}&#8457;</p>
@@ -174,8 +191,8 @@ function render() {
             <p id="feels-like">${cityData.list[20].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[20].weather[0].description).charAt(0).toUpperCase() + (cityData.list[20].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="day-four-weather">
+        `);
+        $section4.html(`
             <h3>${day4}</h3>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[28].main.temp}&#8457;</p>
@@ -183,8 +200,8 @@ function render() {
             <p id="feels-like">${cityData.list[28].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[28].weather[0].description).charAt(0).toUpperCase() + (cityData.list[28].weather[0].description).slice(1)}</p>
-        </section>
-        <section class="day-five-weather">
+        `);
+        $section5.html(`
             <h3>${day5}</h5>
             <h4>Temperature</h4>
             <p id="temp">${cityData.list[36].main.temp}&#8457;</p>
@@ -192,7 +209,6 @@ function render() {
             <p id="feels-like">${cityData.list[36].main.feels_like}&#8457;</p>
             <h4>Details</h4>
             <p id="weather">${(cityData.list[36].weather[0].description).charAt(0).toUpperCase() + (cityData.list[36].weather[0].description).slice(1)}</p>
-        </section>
         `);
     }
 };
