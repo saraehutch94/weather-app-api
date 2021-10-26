@@ -3,6 +3,16 @@
 }
 
 body {
+    height: 100%;
     margin: 0;
     text-align: center;
-};
+    background-image: linear-gradient(orange, yellow);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Codystar', cursive;
+}
