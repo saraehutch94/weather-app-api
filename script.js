@@ -60,7 +60,9 @@ function render() {
             "justify-content": "center"
         });
         const $dayName = $(".day-name");
-        $dayName.css("text-decoration", "underline");
+        $dayName.css({
+            "font-size": "20px"
+        });
         const $flexItem = $(".flex-item");
         $flexItem.css({
             "border-radius": "15px",
@@ -103,7 +105,9 @@ function render() {
             "justify-content": "space-evenly"
         });
         const $dayName = $(".day-name");
-        $dayName.css("text-decoration", "underline");
+        $dayName.css({
+            "font-size": "20px"
+        });
         const $flexItem = $(".flex-item");
         $flexItem.css({
             "border-radius": "15px",
@@ -157,7 +161,9 @@ function render() {
             "justify-content": "space-evenly"
         });
         const $dayName = $(".day-name");
-        $dayName.css("text-decoration", "underline");
+        $dayName.css({
+            "font-size": "20px"
+        });
         const $flexItem = $(".flex-item");
         $flexItem.css({
             "border-radius": "15px",
@@ -222,7 +228,9 @@ function render() {
             "justify-content": "space-evenly"
         });
         const $dayName = $(".day-name");
-        $dayName.css("text-decoration", "underline");
+        $dayName.css({
+            "font-size": "20px"
+        });
         const $flexItem = $(".flex-item");
         $flexItem.css({
             "border-radius": "15px",
@@ -298,7 +306,9 @@ function render() {
             "justify-content": "space-evenly",
         });
         const $dayName = $(".day-name");
-        $dayName.css("text-decoration", "underline");
+        $dayName.css({
+            "font-size": "20px"
+        });
         const $flexItem = $(".flex-item");
         $flexItem.css({
             "border-radius": "15px",
