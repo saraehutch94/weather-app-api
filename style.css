@@ -6,7 +6,7 @@ body {
     height: 100%;
     margin: 0;
     text-align: center;
-    background-image: linear-gradient(rgb(167, 125, 202), rgb(182, 112, 161));
+    background-image: linear-gradient(rgb(167, 125, 202), rgb(185, 99, 142));
     background-image: webkit-linear-gradient(rgba(81, 171, 199, 0.911), rgb(130, 197, 116));
     background-image: moz-linear-gradient(rgb(54, 122, 111), rgb(130, 197, 116));
     background-repeat: no-repeat;
@@ -15,11 +15,12 @@ body {
 }
 
 h1 {
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: -15px;
-    color: white;
+    color: rgb(255, 238, 0);
     font-size: 60px;
-    font-family: 'Codystar', cursive;
+    font-family: 'Leckerli One', cursive;
+    text-shadow: 4px 4px black;
 }
 
 .type-area {

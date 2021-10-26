@@ -67,7 +67,7 @@ function render() {
             "padding": "5px",
             "margin": "15px",
             "height": "350px",
-            "width": "250px",
+            "width": "240px",
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
@@ -110,7 +110,7 @@ function render() {
             "padding": "5px",
             "margin": "15px",
             "height": "350px",
-            "width": "250px",
+            "width": "240px",
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
@@ -164,7 +164,7 @@ function render() {
             "padding": "5px",
             "margin": "15px",
             "height": "350px",
-            "width": "250px",
+            "width": "240px",
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
@@ -229,7 +229,7 @@ function render() {
             "padding": "5px",
             "margin": "15px",
             "height": "350px",
-            "width": "250px",
+            "width": "240px",
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
@@ -305,7 +305,7 @@ function render() {
             "padding": "5px",
             "margin": "15px",
             "height": "350px",
-            "width": "250px",
+            "width": "240px",
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
