@@ -29,3 +29,4 @@
 * Make app mobile-friendly (media queries)
 * Center content of page (h1, inputs, select) BEFORE weather information is added
 * Outline around entire h1, not just bottom and right where shadows are
+* Background when page becomes scrollable: whitespace?
