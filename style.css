@@ -7,8 +7,8 @@ body {
     margin: 0;
     text-align: center;
     background-image: linear-gradient(rgb(115, 212, 230), rgb(130, 197, 116));
-    background-image: webkit-linear-gradient(orange, yellow);
-    background-image: moz-linear-gradient(orange, yellow);
+    background-image: webkit-linear-gradient(rgb(115, 212, 230), rgb(130, 197, 116));
+    background-image: moz-linear-gradient(rgb(115, 212, 230), rgb(130, 197, 116));
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family:'Rubik', sans-serif;;
