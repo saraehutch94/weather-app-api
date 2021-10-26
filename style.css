@@ -6,7 +6,7 @@ body {
     height: 100%;
     margin: 0;
     text-align: center;
-    background-image: linear-gradient(rgb(163, 118, 194), rgb(175, 104, 163));
+    background-image: linear-gradient(rgb(115, 212, 230), rgb(130, 197, 116));
     background-image: webkit-linear-gradient(orange, yellow);
     background-image: moz-linear-gradient(orange, yellow);
     background-repeat: no-repeat;
