@@ -17,7 +17,6 @@ let cityData;
 const $form = $("form");
 const $input = $("input[type='text']");
 const $main = $("main");
-const $allSections = $("section");
 const $h2 = $(".weather-for");
 const $select = $("select");
 
@@ -44,7 +43,7 @@ function render() {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
             <section class="flex-item">
-                <h3>Today</h3>
+                <h3 class="day-name">Today</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
                 <hr>
@@ -60,9 +59,10 @@ function render() {
             "flex-wrap": "wrap",
             "justify-content": "center"
         });
+        const $dayName = $(".day-name");
+        $dayName.css("text-decoration", "underline");
         const $flexItem = $(".flex-item");
         $flexItem.css({
-            "border": "2px solid black",
             "border-radius": "15px",
             "padding": "5px",
             "margin": "15px",
@@ -75,7 +75,7 @@ function render() {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
             <section class="flex-item">
-                <h3>Today</h3>
+                <h3 class="day-name">Today</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
                 <hr>
@@ -86,7 +86,7 @@ function render() {
                 <p id="weather">${(cityData.list[4].weather[0].description).charAt(0).toUpperCase() + (cityData.list[4].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3>Tomorrow</h3>
+                <h3 class="day-name">Tomorrow</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[12].main.temp}&#8457;</p>
                 <hr>
@@ -102,9 +102,10 @@ function render() {
             "flex-wrap": "wrap",
             "justify-content": "space-evenly"
         });
+        const $dayName = $(".day-name");
+        $dayName.css("text-decoration", "underline");
         const $flexItem = $(".flex-item");
         $flexItem.css({
-            "border": "2px solid black",
             "border-radius": "15px",
             "padding": "5px",
             "margin": "15px",
@@ -117,7 +118,7 @@ function render() {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
             <section class="flex-item">
-                <h3>Today</h3>
+                <h3 class="day-name">Today</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
                 <hr>
@@ -128,7 +129,7 @@ function render() {
                 <p id="weather">${(cityData.list[4].weather[0].description).charAt(0).toUpperCase() + (cityData.list[4].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3>Tomorrow</h3>
+                <h3 class="day-name">Tomorrow</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[12].main.temp}&#8457;</p>
                 <hr>
@@ -139,7 +140,7 @@ function render() {
                 <p id="weather">${(cityData.list[12].weather[0].description).charAt(0).toUpperCase() + (cityData.list[12].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3>${day3}</h3>
+                <h3 class="day-name">${day3}</h3>
                 <h4>Temperature</h4>
                 <p id-"temp">${cityData.list[20].main.temp}&#8457;</p>
                 <hr>
@@ -155,9 +156,10 @@ function render() {
             "flex-wrap": "wrap",
             "justify-content": "space-evenly"
         });
+        const $dayName = $(".day-name");
+        $dayName.css("text-decoration", "underline");
         const $flexItem = $(".flex-item");
         $flexItem.css({
-            "border": "2px solid black",
             "border-radius": "15px",
             "padding": "5px",
             "margin": "15px",
@@ -170,7 +172,7 @@ function render() {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
             <section class="flex-item">
-                <h3>Today</h3>
+                <h3 class="day-name">Today</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
                 <hr>
@@ -181,7 +183,7 @@ function render() {
                 <p id="weather">${(cityData.list[4].weather[0].description).charAt(0).toUpperCase() + (cityData.list[4].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3>Tomorrow</h3>
+                <h3 class="day-name">Tomorrow</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[12].main.temp}&#8457;</p>
                 <hr>
@@ -192,7 +194,7 @@ function render() {
                 <p id="weather">${(cityData.list[12].weather[0].description).charAt(0).toUpperCase() + (cityData.list[12].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3>${day3}</h3>
+                <h3 class="day-name">${day3}</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[20].main.temp}&#8457;</p>
                 <hr>
@@ -203,7 +205,7 @@ function render() {
                 <p id="weather">${(cityData.list[20].weather[0].description).charAt(0).toUpperCase() + (cityData.list[20].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3>${day4}</h3>
+                <h3 class="day-name">${day4}</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[28].main.temp}&#8457;</p>
                 <hr>
@@ -219,9 +221,10 @@ function render() {
             "flex-wrap": "wrap",
             "justify-content": "space-evenly"
         });
+        const $dayName = $(".day-name");
+        $dayName.css("text-decoration", "underline");
         const $flexItem = $(".flex-item");
         $flexItem.css({
-            "border": "2px solid black",
             "border-radius": "15px",
             "padding": "5px",
             "margin": "15px",
@@ -234,7 +237,7 @@ function render() {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
             <section class="flex-item">
-                <h3>Today</h3>
+                <h3 class="day-name">Today</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
                 <hr>
@@ -245,7 +248,7 @@ function render() {
                 <p id="weather">${(cityData.list[4].weather[0].description).charAt(0).toUpperCase() + (cityData.list[4].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3>Tomorrow</h3>
+                <h3 class="day-name">Tomorrow</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[12].main.temp}&#8457;</p>
                 <hr>
@@ -256,7 +259,7 @@ function render() {
                 <p id="weather">${(cityData.list[12].weather[0].description).charAt(0).toUpperCase() + (cityData.list[12].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3>${day3}</h3>
+                <h3 class="day-name">${day3}</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[20].main.temp}&#8457;</p>
                 <hr>
@@ -267,7 +270,7 @@ function render() {
                 <p id="weather">${(cityData.list[20].weather[0].description).charAt(0).toUpperCase() + (cityData.list[20].weather[0].description).slice(1)}</p>
             </section>
                 <section class="flex-item">
-                <h3>${day4}</h3>
+                <h3 class="day-name">${day4}</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[28].main.temp}&#8457;</p>
                 <hr>
@@ -278,7 +281,7 @@ function render() {
                 <p id="weather">${(cityData.list[28].weather[0].description).charAt(0).toUpperCase() + (cityData.list[28].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3>${day5}</h5>
+                <h3 class="day-name">${day5}</h5>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[36].main.temp}&#8457;</p>
                 <hr>
@@ -294,9 +297,10 @@ function render() {
             "flex-wrap": "wrap",
             "justify-content": "space-evenly",
         });
+        const $dayName = $(".day-name");
+        $dayName.css("text-decoration", "underline");
         const $flexItem = $(".flex-item");
         $flexItem.css({
-            "border": "2px solid black",
             "border-radius": "15px",
             "padding": "5px",
             "margin": "15px",
