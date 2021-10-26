@@ -6,8 +6,8 @@ body {
     height: 100%;
     margin: 0;
     text-align: center;
-    background-image: linear-gradient(rgb(115, 212, 230), rgb(130, 197, 116));
-    background-image: webkit-linear-gradient(rgb(115, 212, 230), rgb(130, 197, 116));
+    background-image: linear-gradient(rgb(167, 125, 202), rgb(182, 112, 161));
+    background-image: webkit-linear-gradient(rgba(81, 171, 199, 0.911), rgb(130, 197, 116));
     background-image: moz-linear-gradient(rgb(115, 212, 230), rgb(130, 197, 116));
     background-repeat: no-repeat;
     background-attachment: fixed;

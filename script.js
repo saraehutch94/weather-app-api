@@ -44,6 +44,7 @@ function render() {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
             <section class="flex-item">
+                <h3>Today</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
                 <hr>
@@ -62,9 +63,13 @@ function render() {
         const $flexItem = $(".flex-item");
         $flexItem.css({
             "border": "2px solid black",
-            "padding": "20px",
-            "height": "350px"
-
+            "border-radius": "15px",
+            "padding": "5px",
+            "margin": "15px",
+            "height": "350px",
+            "width": "250px",
+            "background-color": "rgba(81, 171, 199, 0.911)",
+            "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
     } else if ($select.val() === "2") {
         $h2.html(`${cityData.city.name} Weather`);
@@ -99,9 +104,14 @@ function render() {
         });
         const $flexItem = $(".flex-item");
         $flexItem.css({
-            "border": "3px solid black",
-            "padding": "20px",
-            "height": "350px"
+            "border": "2px solid black",
+            "border-radius": "15px",
+            "padding": "5px",
+            "margin": "15px",
+            "height": "350px",
+            "width": "250px",
+            "background-color": "rgba(81, 171, 199, 0.911)",
+            "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
     } else if ($select.val() === "3") {
         $h2.html(`${cityData.city.name} Weather`);
@@ -147,9 +157,14 @@ function render() {
         });
         const $flexItem = $(".flex-item");
         $flexItem.css({
-            "border": "3px solid black",
-            "padding": "20px",
-            "height": "350px"
+            "border": "2px solid black",
+            "border-radius": "15px",
+            "padding": "5px",
+            "margin": "15px",
+            "height": "350px",
+            "width": "250px",
+            "background-color": "rgba(81, 171, 199, 0.911)",
+            "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
     } else if ($select.val() === "4") {
         $h2.html(`${cityData.city.name} Weather`);
@@ -159,7 +174,7 @@ function render() {
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[4].main.temp}&#8457;</p>
                 <hr>
-                <h4>Feels like</h4>
+                <h4>Feels Like</h4>
                 <p id="feels-like">${cityData.list[4].main.feels_like}&#8457;</p>
                 <hr>
                 <h4>Details</h4>
@@ -206,9 +221,14 @@ function render() {
         });
         const $flexItem = $(".flex-item");
         $flexItem.css({
-            "border": "3px solid black",
-            "padding": "20px",
-            "height": "350px"
+            "border": "2px solid black",
+            "border-radius": "15px",
+            "padding": "5px",
+            "margin": "15px",
+            "height": "350px",
+            "width": "250px",
+            "background-color": "rgba(81, 171, 199, 0.911)",
+            "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
     } else {
         $h2.html(`${cityData.city.name} Weather`);
@@ -276,9 +296,14 @@ function render() {
         });
         const $flexItem = $(".flex-item");
         $flexItem.css({
-            "border": "3px solid black",
-            "padding": "20px",
-            "height": "350px"
+            "border": "2px solid black",
+            "border-radius": "15px",
+            "padding": "5px",
+            "margin": "15px",
+            "height": "350px",
+            "width": "250px",
+            "background-color": "rgba(81, 171, 199, 0.911)",
+            "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
     }
 };
