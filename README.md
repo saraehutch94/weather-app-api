@@ -14,7 +14,7 @@
 * Choose amount of days of weather information (up to five) to view
 * Click button to view amount of days of weather chosen
 * View temperature, "feels-like", and specific details about weather for each day
-* **Inspired by Dreamville Fest 2020 Promo**
+* **Color scheme inspired by Dreamville Fest 2020 Promo**
 
 ## User Stories
 * AAU, I should be able to view weather for a specific city by being able to type in a specific city.
