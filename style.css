@@ -7,12 +7,21 @@ body {
     margin: 0;
     text-align: center;
     background-image: linear-gradient(rgb(167, 125, 202), rgb(185, 99, 142));
-    background-image: webkit-linear-gradient(rgba(81, 171, 199, 0.911), rgb(130, 197, 116));
-    background-image: moz-linear-gradient(rgb(54, 122, 111), rgb(130, 197, 116));
+    background-image: webkit-linear-gradient(rgb(167, 125, 202), rgb(185, 99, 142));
+    background-image: moz-linear-gradient(rgb(167, 125, 202), rgb(185, 99, 142));
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family:'Rubik', sans-serif;
     font-weight: 300;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;
 }
 
 h1 {
@@ -45,5 +54,12 @@ h1 {
 }
 
 footer {
-    height: 30px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 20px;
+    font-family:'Rubik', sans-serif;
+    font-weight: 500;
 }
