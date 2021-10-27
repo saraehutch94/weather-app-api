@@ -4,9 +4,9 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5/forecast";
 const API_KEY = "636c081e5a0b64f047edce5f8e863700";
 const date = new Date();
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const day3 = days[date.getDay() + 2];
-const day4 = days[date.getDay() + 3];
-const day5 = days[date.getDay() + 4];
+const day3 = days[date.getDay() + 2 > 6 ? date.getDay() + 2 - 7 : date.getDay() + 2];
+const day4 = days[date.getDay() + 3 > 6 ? date.getDay() + 3 - 7 : date.getDay() + 3];
+const day5 = days[date.getDay() + 4 > 6 ? date.getDay() + 4 - 7 : date.getDay() + 4]; 
 
 // Variables -> Data that changes
 
