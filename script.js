@@ -235,7 +235,7 @@ function render() {
         $flexItem.css({
             "border-radius": "15px",
             "padding": "5px",
-            "margin": "15px",
+            "margin": "15px 0 30px 0",
             "height": "350px",
             "width": "240px",
             "background-color": "rgba(81, 171, 199, 0.911)",
@@ -289,7 +289,7 @@ function render() {
                 <p id="weather">${(cityData.list[28].weather[0].description).charAt(0).toUpperCase() + (cityData.list[28].weather[0].description).slice(1)}</p>
             </section>
             <section class="flex-item">
-                <h3 class="day-name">${day5}</h5>
+                <h3 class="day-name">${day5}</h3>
                 <h4>Temperature</h4>
                 <p id="temp">${cityData.list[36].main.temp}&#8457;</p>
                 <hr>
