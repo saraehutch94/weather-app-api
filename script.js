@@ -73,6 +73,7 @@ function render() {
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
+        $input.val("");
     } else if ($select.val() === "2") {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
@@ -118,6 +119,7 @@ function render() {
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
+        $input.val("");
     } else if ($select.val() === "3") {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
@@ -174,6 +176,7 @@ function render() {
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
+        $input.val("");
     } else if ($select.val() === "4") {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
@@ -241,6 +244,7 @@ function render() {
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
+        $input.val("");
     } else {
         $h2.html(`${cityData.city.name} Weather`);
         $main.html(`
@@ -319,5 +323,6 @@ function render() {
             "background-color": "rgba(81, 171, 199, 0.911)",
             "box-shadow": "10px 10px 2px rgb(54, 122, 111)"
         });
+        $input.val("");
     }
 };
